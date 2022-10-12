@@ -1,0 +1,205 @@
+Event	ID	Name			Wwise Object Path	Notes
+	34538949	Stop_GlassJoe_SFX_Knockout			\Glass Joe\Stop_GlassJoe_SFX_Knockout	
+	48420597	Play_CHAR_GLASSJOE_KnockdownHighSlow			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownHighSlow	
+	221620470	Play_NIS_GlassJoeBeginnerPreRound			\Glass Joe\Play_NIS_GlassJoeBeginnerPreRound	
+	247298805	Play_CHAR_GLASSJOE_OpponentDownMoveForward			\Glass Joe\Play_CHAR_GLASSJOE_OpponentDownMoveForward	
+	271561331	Stop_CHAR_GLASSJOE_Mmm			\Glass Joe\Stop_CHAR_GLASSJOE_Mmm	
+	315340985	Play_CHAR_GLASSJOE_RightHook_01			\Glass Joe\Play_CHAR_GLASSJOE_RightHook_01	
+	315340986	Play_CHAR_GLASSJOE_RightHook_02			\Glass Joe\Play_CHAR_GLASSJOE_RightHook_02	
+	315340987	Play_CHAR_GLASSJOE_RightHook_03			\Glass Joe\Play_CHAR_GLASSJOE_RightHook_03	
+	335026802	Play_CHAR_GLASSJOE_LeftJabReturn			\Glass Joe\Play_CHAR_GLASSJOE_LeftJabReturn	
+	349278881	Stop_GlassJoe_SFX_WinFight			\Glass Joe\Stop_GlassJoe_SFX_WinFight	
+	416807244	Play_CHAR_GLASSJOE_ReactSuper			\Glass Joe\Play_CHAR_GLASSJOE_ReactSuper	
+	474519441	Play_CHAR_GLASSJOE_HookBlocked			\Glass Joe\Play_CHAR_GLASSJOE_HookBlocked	
+	588209438	Stop_CHAR_GLASSJOE_KnockdownLow			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownLow	
+	608347074	Play_CHAR_GLASSJOE_KnockdownHigh			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownHigh	
+	609786676	Play_GlassJoe_SFX_PreFight			\Glass Joe\Play_GlassJoe_SFX_PreFight	
+	637694115	Stop_CHAR_GLASSJOE_OpponentDownMoveForward			\Glass Joe\Stop_CHAR_GLASSJOE_OpponentDownMoveForward	
+	808202463	Stop_GlassJoe_SFX_PreFight_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_PreFight_Dialogue	
+	851305077	Stop_CHAR_GLASSJOE_Taunt_Dialogue			\Glass Joe\Stop_CHAR_GLASSJOE_Taunt_Dialogue	
+	917932240	Play_CHAR_GLASSJOE_StunLoop			\Glass Joe\Play_CHAR_GLASSJOE_StunLoop	
+	941340206	Play_GlassJoe_SFX_PreFightAlternate			\Glass Joe\Play_GlassJoe_SFX_PreFightAlternate	
+	984762516	Stop_CHAR_GLASSJOE_CornermanRound1			\Glass Joe\Stop_CHAR_GLASSJOE_CornermanRound1	
+	984762519	Stop_CHAR_GLASSJOE_CornermanRound2			\Glass Joe\Stop_CHAR_GLASSJOE_CornermanRound2	
+	985362582	Stop_GlassJoe_SFX_WinFight_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_WinFight_Dialogue	
+	992323495	Play_CHAR_GLASSJOE_BlockImpact			\Glass Joe\Play_CHAR_GLASSJOE_BlockImpact	
+	1027044972	Play_CHAR_GLASSJOE_RightHookSuccess_01			\Glass Joe\Play_CHAR_GLASSJOE_RightHookSuccess_01	
+	1052835243	Play_GlassJoe_SFX_WinFight			\Glass Joe\Play_GlassJoe_SFX_WinFight	
+	1084297342	Stop_GlassJoe_SFX_PreFight			\Glass Joe\Stop_GlassJoe_SFX_PreFight	
+	1092677748	Stop_GlassJoe_SFX_PreRound			\Glass Joe\Stop_GlassJoe_SFX_PreRound	
+	1164942127	Play_NIS_GlassJoeBeginnerBloodCheck			\Glass Joe\Play_NIS_GlassJoeBeginnerBloodCheck	
+	1169098772	Stop_GlassJoe_SFX_Knockout_NoCrowd			\Glass Joe\Stop_GlassJoe_SFX_Knockout_NoCrowd	
+	1207878190	Stop_CHAR_GLASSJOE_ReactHookBigX			\Glass Joe\Stop_CHAR_GLASSJOE_ReactHookBigX	
+	1281150838	Stop_CHAR_GLASSJOE_ReactSuper			\Glass Joe\Stop_CHAR_GLASSJOE_ReactSuper	
+	1295938493	Stop_CHAR_GLASSJOE_Anger			\Glass Joe\Stop_CHAR_GLASSJOE_Anger	
+	1317168235	Play_CHAR_GLASSJOE_DodgeStar			\Glass Joe\Play_CHAR_GLASSJOE_DodgeStar	
+	1324307762	Play_CHAR_GLASSJOE_Taunt			\Glass Joe\Play_CHAR_GLASSJOE_Taunt	
+	1336190740	Stop_CHAR_GLASSJOE_OpponentDown_Dialogue			\Glass Joe\Stop_CHAR_GLASSJOE_OpponentDown_Dialogue	
+	1398478914	Stop_CHAR_GLASSJOE_StunLoop			\Glass Joe\Stop_CHAR_GLASSJOE_StunLoop	
+	1444483099	Stop_CHAR_GLASSJOE_HookBlocked			\Glass Joe\Stop_CHAR_GLASSJOE_HookBlocked	
+	1520631949	Stop_CHAR_GLASSJOE_Gasp			\Glass Joe\Stop_CHAR_GLASSJOE_Gasp	
+	1595740868	Stop_GlassJoe_SFX_PreFightAlternate			\Glass Joe\Stop_GlassJoe_SFX_PreFightAlternate	
+	1655172987	Stop_CHAR_GLASSJOE_KnockdownHighSlow			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownHighSlow	
+	1803089822	Stop_CHAR_GLASSJOE_ReactJabBigX			\Glass Joe\Stop_CHAR_GLASSJOE_ReactJabBigX	
+	1821908532	Stop_CHAR_GLASSJOE_SuperPunch_Dialogue			\Glass Joe\Stop_CHAR_GLASSJOE_SuperPunch_Dialogue	
+	1983251637	Play_CHAR_GLASSJOE_KnockdownGetup			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownGetup	
+	2002748036	Play_CHAR_GLASSJOE_KnockdownLow			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownLow	
+	2015900040	Stop_CHAR_GLASSJOE_KnockdownGetupFake			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownGetupFake	
+	2042529626	Stop_GlassJoe_SFX_Knockout_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_Knockout_Dialogue	
+	2216450674	Play_GlassJoe_SFX_Knockout_NoCrowd			\Glass Joe\Play_GlassJoe_SFX_Knockout_NoCrowd	
+	2240846608	Stop_CHAR_GLASSJOE_ReactHookX			\Glass Joe\Stop_CHAR_GLASSJOE_ReactHookX	
+	2351979601	Stop_NIS_GlassJoeBeginnerBloodCheck			\Glass Joe\Stop_NIS_GlassJoeBeginnerBloodCheck	
+	2407108001	Stop_CHAR_GLASSJOE_DodgeStar			\Glass Joe\Stop_CHAR_GLASSJOE_DodgeStar	
+	2471630207	Stop_CHAR_GLASSJOE_LeftJabSuccess_01			\Glass Joe\Stop_CHAR_GLASSJOE_LeftJabSuccess_01	
+	2490955857	Stop_CHAR_GLASSJOE_BlockImpact			\Glass Joe\Stop_CHAR_GLASSJOE_BlockImpact	
+	2505831522	Play_CHAR_GLASSJOE_ReactHookX			\Glass Joe\Play_CHAR_GLASSJOE_ReactHookX	
+	2511760240	Stop_GlassJoe_SFX_Cornerman_Idle_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_Cornerman_Idle_Dialogue	
+	2564859703	Stop_CHAR_GLASSJOE_KnockdownGetupMoveForward			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownGetupMoveForward	
+	2640650007	Play_CHAR_GLASSJOE_RightHookReturn			\Glass Joe\Play_CHAR_GLASSJOE_RightHookReturn	
+	2718189959	Stop_CHAR_GLASSJOE_OpponentDown			\Glass Joe\Stop_CHAR_GLASSJOE_OpponentDown	
+	2719015925	Play_CHAR_GLASSJOE_SuperPunch			\Glass Joe\Play_CHAR_GLASSJOE_SuperPunch	
+	2772146410	Play_CHAR_GLASSJOE_KnockdownGetupFake			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownGetupFake	
+	2832111660	Play_CHAR_GLASSJOE_ReactJabBigX			\Glass Joe\Play_CHAR_GLASSJOE_ReactJabBigX	
+	2870379053	Stop_CHAR_GLASSJOE_RightHookReturn			\Glass Joe\Stop_CHAR_GLASSJOE_RightHookReturn	
+	2901941856	Stop_CHAR_GLASSJOE_ReactJabX			\Glass Joe\Stop_CHAR_GLASSJOE_ReactJabX	
+	2902435804	Stop_CHAR_GLASSJOE_KnockdownHigh			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownHigh	
+	3018810084	Play_CHAR_GLASSJOE_LeftJab_03			\Glass Joe\Play_CHAR_GLASSJOE_LeftJab_03	
+	3018810085	Play_CHAR_GLASSJOE_LeftJab_02			\Glass Joe\Play_CHAR_GLASSJOE_LeftJab_02	
+	3018810086	Play_CHAR_GLASSJOE_LeftJab_01			\Glass Joe\Play_CHAR_GLASSJOE_LeftJab_01	
+	3019897194	Play_CHAR_GLASSJOE_ReactJabX			\Glass Joe\Play_CHAR_GLASSJOE_ReactJabX	
+	3069539047	Stop_CHAR_GLASSJOE_SuperPunch			\Glass Joe\Stop_CHAR_GLASSJOE_SuperPunch	
+	3287048953	Play_CHAR_GLASSJOE_CornermanRound2			\Glass Joe\Play_CHAR_GLASSJOE_CornermanRound2	
+	3287048954	Play_CHAR_GLASSJOE_CornermanRound1			\Glass Joe\Play_CHAR_GLASSJOE_CornermanRound1	
+	3476517037	Stop_GlassJoe_SFX_PreRound_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_PreRound_Dialogue	
+	3485829299	Stop_CHAR_GLASSJOE_KnockdownGetup			\Glass Joe\Stop_CHAR_GLASSJOE_KnockdownGetup	
+	3566672973	Play_CHAR_GLASSJOE_LeftJabSuccess_01			\Glass Joe\Play_CHAR_GLASSJOE_LeftJabSuccess_01	
+	3618758628	Play_CHAR_GLASSJOE_ReactHookBigX			\Glass Joe\Play_CHAR_GLASSJOE_ReactHookBigX	
+	3641433437	Stop_GlassJoe_SFX_PreFightAlternate_Dialogue			\Glass Joe\Stop_GlassJoe_SFX_PreFightAlternate_Dialogue	
+	3693576510	Play_GlassJoe_SFX_Cornerman_Idle_Dialogue			\Glass Joe\Play_GlassJoe_SFX_Cornerman_Idle_Dialogue	
+	3821898665	Play_CHAR_GLASSJOE_KnockdownGetupMoveForward			\Glass Joe\Play_CHAR_GLASSJOE_KnockdownGetupMoveForward	
+	3823589088	Stop_CHAR_GLASSJOE_RightHook_02			\Glass Joe\Stop_CHAR_GLASSJOE_RightHook_02	
+	3823589089	Stop_CHAR_GLASSJOE_RightHook_03			\Glass Joe\Stop_CHAR_GLASSJOE_RightHook_03	
+	3823589091	Stop_CHAR_GLASSJOE_RightHook_01			\Glass Joe\Stop_CHAR_GLASSJOE_RightHook_01	
+	3953466185	Play_CHAR_GLASSJOE_OpponentDown			\Glass Joe\Play_CHAR_GLASSJOE_OpponentDown	
+	3988798380	Stop_CHAR_GLASSJOE_Taunt			\Glass Joe\Stop_CHAR_GLASSJOE_Taunt	
+	4102359822	Stop_CHAR_GLASSJOE_RightHookSuccess_01			\Glass Joe\Stop_CHAR_GLASSJOE_RightHookSuccess_01	
+	4193884736	Stop_CHAR_GLASSJOE_LeftJab_01			\Glass Joe\Stop_CHAR_GLASSJOE_LeftJab_01	
+	4193884738	Stop_CHAR_GLASSJOE_LeftJab_03			\Glass Joe\Stop_CHAR_GLASSJOE_LeftJab_03	
+	4193884739	Stop_CHAR_GLASSJOE_LeftJab_02			\Glass Joe\Stop_CHAR_GLASSJOE_LeftJab_02	
+	4210638928	Stop_CHAR_GLASSJOE_LeftJabReturn			\Glass Joe\Stop_CHAR_GLASSJOE_LeftJabReturn	
+	4272130487	Play_GlassJoe_SFX_KnockOut			\Glass Joe\Play_GlassJoe_SFX_KnockOut	
+
+Bus	ID	Name			Wwise Object Path	Notes
+	27182857	Crowd			\Default Work Unit\Master Control Bus\Crowd	
+	33120237	Master Control Bus			\Default Work Unit\Master Control Bus	
+	229662655	Dialogue			\Default Work Unit\Master Control Bus\Dialogue	
+	535289899	NIS			\Default Work Unit\Master Control Bus\SFX\NIS	
+	581752146	SFX			\Default Work Unit\Master Control Bus\SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes
+	14891457	CHAR_GLASSJOENEW_DodgeStar_04	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_DodgeStar_04_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_DodgeStar\CHAR_GLASSJOENEW_DodgeStar_04	
+	993112813	CHAR_GLASSJOENEW_DodgeStar_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_DodgeStar_02_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_DodgeStar\CHAR_GLASSJOENEW_DodgeStar_02	
+	395474672	CHAR_GLASSJOENEW_Effort_05	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Effort_05_298BB369.wav		\Glass Joe\Punching\Left Jab Efforts\CHAR_GLASSJOENEW_Effort_05	
+	362455781	CHAR_GLASSJOE_Taunt	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_Taunt_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_Taunt	
+	640092740	CHAR_GLASSJOENEW_ReactHookBig_Dialogue_1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_1_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookBigX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_1	
+	1055031462	CHAR_GLASSJOENEW_DodgeStar_05	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_DodgeStar_05_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_DodgeStar\CHAR_GLASSJOENEW_DodgeStar_05	
+	641583582	CHAR_GLASSJOENEW_RightHook_Dialogue_06	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_06_298BB369.wav		\Glass Joe\Punching\Right Hook Efforts\CHAR_GLASSJOENEW_RightHook_Dialogue_06	
+	848454011	CHAR_GLASSJOENEW_ReactJab_Dialogue_2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_2_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_2	
+	648215228	CHAR_GLASSJOENEW_ReactSuper_Dialogue_04	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactSuper_Dialogue_04_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactSuper\CHAR_GLASSJOENEW_ReactSuper_Dialogue_04	
+	580118386	CHAR_GLASSJOE_RightHook_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_RightHook_01_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_RightHook_01	
+	105074746	CHAR_GLASSJOE_RightHookSuccess_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_RightHookSuccess_01_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_RightHookSuccess_01	
+	359832947	CHAR_GLASSJOENEW_ReactJab_Dialogue_4	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_4_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_4	
+	814588943	CHAR_GLASSJOENEW_ReactSuper_Dialogue_1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactSuper_Dialogue_1_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactSuper\CHAR_GLASSJOENEW_ReactSuper_Dialogue_1	
+	90983526	CHAR_GLASSJOE_SuperPunch_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE2NEW_SuperPunch-Laic_Dialogue_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_SuperPunch_Dialogue	
+	564361459	CHAR_GLASSJOENEW_HookBlocked_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_HookBlocked_03_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_HookBlocked\CHAR_GLASSJOENEW_HookBlocked_03	
+	799356407	CHAR_GLASSJOENEW_DodgeStar_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_DodgeStar_01_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_DodgeStar\CHAR_GLASSJOENEW_DodgeStar_01	
+	605731849	CHAR_GLASSJOE_RightHook_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_RightHook_02_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_RightHook_02	
+	1061672932	CHAR_GLASSJOE_KnockdownGetupFake_Crowd	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownGetupFake_Crowd_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownGetupFake_Crowd	
+	683326912	CHAR_GLASSJOE_KnockdownLow	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownLow_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownLow	
+	60095235	CHAR_GLASSJOENEW_RightHookReturn_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHookReturn_01_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_RightHookReturn\CHAR_GLASSJOENEW_RightHookReturn_01	
+	820889030	CHAR_GLASSJOENEW_ReactJabBig_Dialogue_3	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_3_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabBigX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_3	
+	332059329	CHAR_GLASSJOENEW_DodgeStar_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_DodgeStar_03_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_DodgeStar\CHAR_GLASSJOENEW_DodgeStar_03	
+	843903760	CHAR_GLASSJOE_OpponentDownMoveForward	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_OpponentDownMoveForward_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_OpponentDownMoveForward	
+	838207292	CHAR_GLASSJOENEW_ReactHookBig_Dialogue_3	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_3_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookBigX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_3	
+	336898774	CHAR_GLASSJOE_LeftJabSuccess_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_LeftJabSuccess_01_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_LeftJabSuccess_01	
+	1005013458	CHAR_BALDBULL_StunLoop	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_BALDBULL_StunLoop_AFCCDF27.wav		\Glass Joe\Other\CHAR_BALDBULL_StunLoop	
+	277870156	CHAR_GLASSJOE_Gasp	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Gasp_2F5C471D.wav		\Glass Joe\Other\CHAR_GLASSJOE_Gasp	
+	392916365	CHAR_GLASSJOE_Anger	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Anger_2F5C471D.wav		\Glass Joe\Other\CHAR_GLASSJOE_Anger	
+	556935102	GlassJoe_SFX_Cornerman_Idle_Dialogue_5	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Cornerman_Idle_Dialogue_5_298BB369.wav		\Glass Joe\NIS\GlassJoe_SFX_Cornerman_Idle_Dialogue\GlassJoe_SFX_Cornerman_Idle_Dialogue_5	
+	952980419	CHAR_GLASSJOENEW_ReactJab_Dialogue_6	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_6_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_6	
+	707264326	CHAR_GLASSJOENEW_ReactJab_Dialogue_3	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_3_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_3	
+	31299448	CHAR_GLASSJOENEW_ReactHookBig_Dialogue_2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_2_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookBigX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_2	
+	5758378	CHAR_GLASSJOENEW_RightHook_Dialogue_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_03_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookX\CHAR_GLASSJOENEW_RightHook_Dialogue_03	
+	557581911	CHAR_GLASSJOENEW_ReactSuper_Dialogue_2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactSuper_Dialogue_2_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactSuper\CHAR_GLASSJOENEW_ReactSuper_Dialogue_2	
+	604814435	CHAR_GLASSJOE_LeftJab_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_LeftJab_02_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_LeftJab_02	
+	74819168	CHAR_GLASSJOE_LeftJab_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_LeftJab_01_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_LeftJab_01	
+	122673764	CHAR_GLASSJOE_KnockdownHighSlow_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownHighSlow_Dialogue_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownHighSlow_Dialogue	
+	795963541	GlassJoe_SFX_Cornerman_Idle_Dialogue_4	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Cornerman_Idle_Dialogue_4_298BB369.wav		\Glass Joe\NIS\GlassJoe_SFX_Cornerman_Idle_Dialogue\GlassJoe_SFX_Cornerman_Idle_Dialogue_4	
+	784585780	GlassJoe_SFX_WinFight	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_WinFight_2F5C471D.wav		\Glass Joe\NIS\GlassJoe_SFX_WinFight	
+	873172920	CHAR_GLASSJOENEW_ReactSuper_Dialogue_4	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactSuper_Dialogue_4_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactSuper\CHAR_GLASSJOENEW_ReactSuper_Dialogue_4	
+	708596598	CHAR_GLASSJOENEW_HookBlocked_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_HookBlocked_01_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_HookBlocked\CHAR_GLASSJOENEW_HookBlocked_01	
+	343919396	CHAR_GLASSJOENEW_RightHook_Dialogue_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_01_298BB369.wav		\Glass Joe\Punching\Right Hook Efforts\CHAR_GLASSJOENEW_RightHook_Dialogue_01	
+	105546490	CHAR_GLASSJOE_RightHook_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_RightHook_03_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_RightHook_03	
+	281297664	CHAR_GLASSJOENEW_RightHook_Dialogue_04	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_04_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookX\CHAR_GLASSJOENEW_RightHook_Dialogue_04	
+	563538751	CHAR_GLASSJOENEW_HookBlocked_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_HookBlocked_02_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_HookBlocked\CHAR_GLASSJOENEW_HookBlocked_02	
+	972624035	GlassJoe_SFX_WinFight_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_WinFight_Dialogue_2EE9BA00.wav		\Glass Joe\NIS\GlassJoe_SFX_WinFight_Dialogue	
+	838761420	CHAR_GLASSJOENEW_ReactJabBig_Dialogue_4	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_4_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabBigX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_4	
+	686935643	CHAR_GLASSJOENEW_ReactSuper_Dialogue_3	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactSuper_Dialogue_3_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactSuper\CHAR_GLASSJOENEW_ReactSuper_Dialogue_3	
+	245370567	CHAR_GLASSJOE_BlockImpact	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_BlockImpact_2EE9BA00.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_BlockImpact	
+	995101034	CHAR_GLASSJOENEW_RightHook_Dialogue_05	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_05_298BB369.wav		\Glass Joe\Punching\Right Hook Efforts\CHAR_GLASSJOENEW_RightHook_Dialogue_05	
+	412919297	CHAR_GLASSJOE_KnockdownGetup_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownGetup_Dialogue_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownGetup_Dialogue	
+	599455813	CHAR_GLASSJOE_KnockdownGetupFake	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownGetupFake_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownGetupFake	
+	294473370	CHAR_GLASSJOE_KnockdownGetup	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownGetup_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownGetup	
+	758128663	CHAR_GLASSJOENEW_LeftJabReturn_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_LeftJabReturn_02_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_LeftJabReturn\CHAR_GLASSJOENEW_LeftJabReturn_02	
+	48236950	CHAR_GLASSJOE_LeftJab_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_LeftJab_03_2EE9BA00.wav		\Glass Joe\Punching\CHAR_GLASSJOE_LeftJab_03	
+	390371337	CHAR_GLASSJOE_OpponentDown_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_OpponentDown_Dialogue_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_OpponentDown_Dialogue	
+	4741708	CHAR_GLASSJOE_KnockdownHighSlow	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownHighSlow_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownHighSlow	
+	292365133	GlassJoe_SFX_Cornerman_Idle_Dialogue_2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Cornerman_Idle_Dialogue_2_298BB369.wav		\Glass Joe\NIS\GlassJoe_SFX_Cornerman_Idle_Dialogue\GlassJoe_SFX_Cornerman_Idle_Dialogue_2	
+	286969728	CHAR_GLASSJOENEW_ReactJab_Dialogue_1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_1_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_1	
+	986678591	CHAR_GLASSJOENEW_RightHook_Dialogue_08	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_08_298BB369.wav		\Glass Joe\Punching\Right Hook Efforts\CHAR_GLASSJOENEW_RightHook_Dialogue_08	
+	271947442	CHAR_GLASSJOENEW_Effort_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Effort_01_298BB369.wav		\Glass Joe\Punching\Left Jab Efforts\CHAR_GLASSJOENEW_Effort_01	
+	603136014	CHAR_GLASSJOE_OpponentDown	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_OpponentDown_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_OpponentDown	
+	1036502456	CHAR_GLASSJOE_KnockdownGetupMoveForward	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownGetupMoveForward_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownGetupMoveForward	
+	380871765	CHAR_GLASSJOE_Taunt_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Taunt_Dialogue_298BB369.wav		\Glass Joe\Other\CHAR_GLASSJOE_Taunt_Dialogue	
+	789192464	GlassJoe_SFX_Cornerman_Idle_Dialogue_1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Cornerman_Idle_Dialogue_1_298BB369.wav		\Glass Joe\NIS\GlassJoe_SFX_Cornerman_Idle_Dialogue\GlassJoe_SFX_Cornerman_Idle_Dialogue_1	
+	915453512	CHAR_GLASSJOENEW_LeftJabReturn_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_LeftJabReturn_03_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_LeftJabReturn\CHAR_GLASSJOENEW_LeftJabReturn_03	
+	555299395	CHAR_GLASSJOENEW_LeftJabReturn_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_LeftJabReturn_01_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_LeftJabReturn\CHAR_GLASSJOENEW_LeftJabReturn_01	
+	316158628	CHAR_GLASSJOENEW_ReactJab_Dialogue_5	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJab_Dialogue_5_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabX\CHAR_GLASSJOENEW_ReactJab_Dialogue_5	
+	614896505	CHAR_GLASSJOENEW_RightHook_Dialogue_07	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHook_Dialogue_07_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookX\CHAR_GLASSJOENEW_RightHook_Dialogue_07	
+	1047967290	CHAR_GLASSJOENEW_Aha_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Aha_01_298BB369.wav		\Glass Joe\Punching\Right Hook Efforts\CHAR_GLASSJOENEW_Aha_01	
+	178685750	CHAR_GLASSJOENEW_Effort_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_Effort_02_298BB369.wav		\Glass Joe\Punching\Left Jab Efforts\CHAR_GLASSJOENEW_Effort_02	
+	617548518	GlassJoe_SFX_Cornerman_Idle_Dialogue_3	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Cornerman_Idle_Dialogue_3_298BB369.wav		\Glass Joe\NIS\GlassJoe_SFX_Cornerman_Idle_Dialogue\GlassJoe_SFX_Cornerman_Idle_Dialogue_3	
+	470762353	CHAR_GLASSJOENEW_RightHookReturn_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_RightHookReturn_02_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_RightHookReturn\CHAR_GLASSJOENEW_RightHookReturn_02	
+	786963174	CHAR_GLASSJOENEW_ReactJabBig_Dialogue_2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_2_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabBigX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_2	
+	817666264	CHAR_GLASSJOENEW_ReactJabBig_Dialogue_1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_1_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactJabBigX\CHAR_GLASSJOENEW_ReactJabBig_Dialogue_1	
+	464953804	CHAR_GLASSJOENEW_ReactHookBig_Dialogue_4	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_4_298BB369.wav		\Glass Joe\Reacts\CHAR_GLASSJOE_ReactHookBigX\CHAR_GLASSJOENEW_ReactHookBig_Dialogue_4	
+	866922478	CHAR_GLASSJOE_KnockdownHigh	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_KnockdownHigh_2EE9BA00.wav		\Glass Joe\Other\CHAR_GLASSJOE_KnockdownHigh	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	388219345	CROWD_GlassJoe_SuperPunch	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_GlassJoe_SuperPunch_298BB369.wav	388219345.wav	\Glass Joe\Crowd\CROWD_GlassJoe_SuperPunch	
+	388380108	GlassJoe_SFX_PreRound	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_PreRound_2F5C471D.wav	388380108.wav	\Glass Joe\NIS\GlassJoe_SFX_PreRound	
+	50781333	GlassJoe_SFX_PreFight	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_PreFight_2EE9BA00.wav	50781333.wav	\Glass Joe\NIS\GlassJoe_SFX_PreFight	
+	403589276	CROWD_Oh_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Oh_02_298BB369.wav	403589276.wav	\Crowd\CROWD_Oh\CROWD_Oh_02	
+	1004661941	CROWD_Cheer_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Cheer_03_298BB369.wav	1004661941.wav	\Crowd\Crowd_Cheer\CROWD_Cheer_03	
+	98600041	GlassJoe_SFX_PreFight_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_PreFight_Dialogue_2EE9BA00.wav	98600041.wav	\Glass Joe\NIS\GlassJoe_SFX_PreFight_Dialogue	
+	780496703	CHAR_GLASSJOE_SuperPunch	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CHAR_GLASSJOE_SuperPunch_2EE9BA00.wav	780496703.wav	\Glass Joe\Other\CHAR_GLASSJOE_SuperPunch	
+	984456184	GlassJoe_SFX_Knockout	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_Knockout_298BB369.wav	984456184.wav	\Glass Joe\NIS\GlassJoe_SFX_Knockout	
+	328143600	CHAR_GLASSJOE_CornermanRound2	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_CornermanSpeech2_Dialogue_2EE9BA00.wav	328143600.wav	\Glass Joe\NIS\CHAR_GLASSJOE_CornermanRound2	
+	398289417	CROWD_GEN_Anticipation_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_GEN_Anticipation_02_298BB369.wav	398289417.wav	\Crowd\CROWD_GEN_Anticipation\CROWD_GEN_Anticipation_02	
+	727839197	CHAR_GLASSJOE_CornermanRound1	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_CornermanSpeech1_Dialogue_2EE9BA00.wav	727839197.wav	\Glass Joe\NIS\CHAR_GLASSJOE_CornermanRound1	
+	957830423	CROWD_Oh_03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Oh_03_298BB369.wav	957830423.wav	\Crowd\CROWD_Oh\CROWD_Oh_03	
+	883756933	Crowd_LittleMac_StarFail01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\Crowd_LittleMac_StarFail01_298BB369.wav	883756933.wav	\Crowd\Crowd_LittleMac_StarFail\Crowd_LittleMac_StarFail01	
+	530867416	CROWD_Oh_04	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Oh_04_298BB369.wav	530867416.wav	\Crowd\CROWD_Oh\CROWD_Oh_04	
+	810960779	CROWD_Oh_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Oh_01_298BB369.wav	810960779.wav	\Crowd\CROWD_Oh\CROWD_Oh_01	
+	274326263	Crowd_LittleMac_StarFail03	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\Crowd_LittleMac_StarFail03_298BB369.wav	274326263.wav	\Crowd\Crowd_LittleMac_StarFail\Crowd_LittleMac_StarFail03	
+	553861223	CROWD_StunString	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_StunString_298BB369.wav	553861223.wav	\Crowd\CROWD_StunString	
+	942213324	CROWD_GEN_Anticipation_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_GEN_Anticipation_01_298BB369.wav	942213324.wav	\Crowd\CROWD_GEN_Anticipation\CROWD_GEN_Anticipation_01	
+	766581021	CROWD_Cheer_01	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Cheer_01_298BB369.wav	766581021.wav	\Crowd\Crowd_Cheer\CROWD_Cheer_01	
+	414693275	NIS_GlassJoeBeginnerBloodCheck	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\NIS_GlassJoeBeginnerBloodCheck_2EE9BA00.wav	414693275.wav	\Glass Joe\NIS\NIS_GlassJoeBeginnerBloodCheck	
+	566259595	GlassJoe_SFX_PreFightAlternate_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_PreFightAlternate_Dialogue_2F5C471D.wav	566259595.wav	\Glass Joe\NIS\GlassJoe_SFX_PreFightAlternate_Dialogue	
+	514823051	GlassJoe_SFX_PreRound_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_PreRound_Dialogue_2EE9BA00.wav	514823051.wav	\Glass Joe\NIS\GlassJoe_SFX_PreRound_Dialogue	
+	613763071	GlassJoe_SFX_Knockout_Dialogue	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoeNew_SFX_Knockout_Dialogue_2EE9BA00.wav	613763071.wav	\Glass Joe\NIS\GlassJoe_SFX_Knockout_Dialogue	
+	566941821	GlassJoe_SFX_PreFightAlternate	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\GlassJoe_SFX_PreFightAlternate_2EE9BA00.wav	566941821.wav	\Glass Joe\NIS\GlassJoe_SFX_PreFightAlternate	
+	471225837	CROWD_Cheer_02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\CROWD_Cheer_02_298BB369.wav	471225837.wav	\Crowd\Crowd_Cheer\CROWD_Cheer_02	
+	485250161	Crowd_LittleMac_StarFail02	D:\Project\Hippo\Audio\Wwise\.cache\Wii\SFX\Crowd_LittleMac_StarFail02_298BB369.wav	485250161.wav	\Crowd\Crowd_LittleMac_StarFail\Crowd_LittleMac_StarFail02	
+

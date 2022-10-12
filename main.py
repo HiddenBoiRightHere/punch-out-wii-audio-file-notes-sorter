@@ -1,4 +1,3 @@
-print("Hello world")
-test = open("../example_data/DocLewis.txt", "r")
-print(test)
-test.close()
+from dataloader import file_opener
+
+file_opener("example_data/DocLewis.txt")
