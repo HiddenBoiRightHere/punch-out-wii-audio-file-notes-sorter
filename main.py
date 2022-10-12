@@ -1,5 +1,6 @@
-from dataloader import file_opener
+from dataloader import *
 
-file_opener("example_data/DocLewis.txt")
 
-print("okay")
+total_data = file_opener("example_data/DocLewis.txt")
+
+retrieve_categories(total_data)

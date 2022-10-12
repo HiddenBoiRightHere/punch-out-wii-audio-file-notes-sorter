@@ -60,7 +60,13 @@ def file_opener(path: str) -> List[Dict[str, str]]:
             print("This file is missing the information required. Not all information is perfect in the notes, so try another one!")
             return None
 
-
+def retrieve_categories(total_data: List[Dict[str,str]]):
+    """
+    Recieves all data from the text file and determines the kinds of categories that the audio has.
+    :param total_data: List of dictionaries containing all data.
+    :return: yet to be determined
+    """
+    print(total_data[0])
 
 
 
