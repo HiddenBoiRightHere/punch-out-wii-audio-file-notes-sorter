@@ -173,12 +173,12 @@ def doc_louis_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,
 
             if (name.lower() in file_name):
                 wem_dictionary[fighters].append(elements)
-                continue
+                break
             else:
                 wem_dictionary["Other"].append(elements)
-                continue
+                break
 
-    print(wem_dictionary)
+
     return wem_dictionary
 
 def wem_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,str]]]:
@@ -217,12 +217,12 @@ def wem_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,str]]]
             if (name.lower() in file_name):
                 # if the category name is in the file name, put in dictionary with category
                 wem_dictionary[categories].append(elements)
-                continue
+                break
 
             else:
                 #else place in other
                 wem_dictionary["Other"].append(elements)
-                continue
+                break
 
     return wem_dictionary
 
@@ -261,24 +261,24 @@ def bnk_notes(total_bnk):
                 if (name.lower() in file_name):
                     # if the category name is in the file name, put in dictionary with category
                     bnk_dictionary[categories].append(elements)
-                    continue
+                    break
 
                 elif ("react" in file_name):
                     bnk_dictionary["Reactions"].append(elements)
-                    continue
+                    break
 
                 elif ("right" in file_name):
                     bnk_dictionary["Punches"].append(elements)
-                    continue
+                    break
 
                 elif ("left" in file_name):
                     bnk_dictionary["Punches"].append(elements)
-                    continue
+                    break
 
                 else:
                     #else place in other
                     bnk_dictionary["Other"].append(elements)
-                    continue
+                    break
 
 
     return bnk_dictionary
