@@ -7,8 +7,8 @@ from tkinter_window import *
 flip = 0
 
 if flip == 0:
-    total_data = wem_opener("example_data/SuperMachoMan.txt")
-    total_bnk = bnk_opener("example_data/SuperMachoMan.txt")
+    total_data = wem_opener("example_data/Don_Flamenco_2.txt")
+    total_bnk = bnk_opener("example_data/Don_Flamenco_2.txt")
 else:
     total_data = wem_opener("example_data/DocLewis.txt")
     total_bnk = bnk_opener("example_data/DocLewis.txt")

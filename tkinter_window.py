@@ -35,6 +35,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     main_window = tk.Tk()
     main_window.geometry("800x600")
     main_window.minsize(800,600)
+    main_window.maxsize(800, 600)
     main_window.configure(bg="dark gray")
 
     # TODO =====> Creates Top Label <===== ===== #
@@ -51,9 +52,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     right_frame.pack(side="right", expand=True, padx=20, pady=10)
 
 
-    # TODO =====> File Information and Conversion Buttons <===== ===== #
-    file_information = tk.Label(right_frame, text="This is your file information")
-    file_information.pack(side="top")
+
 
 
 
@@ -106,46 +105,138 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     notebook_parent.add(tab1, text="WEM Files")
     notebook_parent.add(tab2, text="BNK Files")
 
-    # TODO =====> Combobox <===== ===== #
-    #Combobox/dropdown
-    category_box = ttk.Combobox(tab1, values=category_selections_wem, width=20)
-    category_box.set(category_selections_wem[0])
 
-
-
-
-    # TODO =====> BNK Combobox <===== ===== #
-    category_box_bnk = ttk.Combobox(tab2, values=category_selections_bnk, width=20)
-    category_box_bnk.set(category_selections_bnk[0])
+    # TODO =====> Listboxes to select categories <===== ===== #
+    file_list_box = tk.Listbox(tab1, height=30, width=75, selectmode="single")
+    file_list_box_bnk = tk.Listbox(tab2, height=30, width=75, selectmode="single")
 
     # TODO =====> File Information in Frames WEM <===== ===== #
 
-    file_list_box = tk.Listbox(tab1, height=30, width = 75)
-    for files in total_wem_data[category_selections_wem[0]]:
+    def on_field_change(index, value, op):
+        file_list_box.config(state="normal")
+        file_list_box.delete(0, "end")
+        selected_index = category_selections_wem.index(selected.get())
+        for files in total_wem_data[category_selections_wem[selected_index]]:
             file_list_box.insert("end", files["Name"])
+        if total_wem_data[category_selections_wem[selected_index]] == []:
+            file_list_box.insert("end", "There are no files in this category! Please select another one.")
+            file_list_box.config(state="disabled")
+    def on_field_change_bnk(index, value, op):
+        file_list_box_bnk.config(state="normal")
+        file_list_box_bnk.delete(0, "end")
+        try:
+            selected_index = category_selections_bnk.index(selected_bnk.get())
+            for files in total_bnk_data[category_selections_bnk[selected_index]]:
+                file_list_box_bnk.insert("end", files["Name"])
+            if total_bnk_data[category_selections_bnk[selected_index]] == []:
+                file_list_box_bnk.insert("end", "There are no files in this category! Please select another one.")
+                file_list_box_bnk.config(state="disabled")
+        except:
+            file_list_box_bnk.insert("end", "That category does not exist!")
+            file_list_box_bnk.config(state="disabled")
 
 
 
+    #Keep track of changes for wem
+    selected = tk.StringVar()
+    selected.trace("w", on_field_change)
 
-    # TODO =====> Scrollbar <===== ===== #
-    #Scrollbar
-    scrollbar = tk.Scrollbar(master=tab1, width=15)
+    #keep track of chagnes for bnk
+    selected_bnk = tk.StringVar()
+    selected_bnk.trace("w", on_field_change_bnk)
+
+
+    #Combobox/dropdown
+    category_box = ttk.Combobox(tab1, values=category_selections_wem, width=20, textvariable=selected, )
+    category_box.set(category_selections_wem[0])
+
+    category_box_bnk = ttk.Combobox(tab2, values=category_selections_bnk, width=20, textvariable=selected_bnk)
+    category_box_bnk.set(category_selections_bnk[0])
+
+    # TODO =====> File Information WEM <===== ===== #
+    def onselect(evt):
+        # Note here that Tkinter passes an event object to onselect()
+        w = evt.widget
+        try:
+            #Gets index of current selection in listbox
+            index = int(w.curselection()[0])
+
+            #Collects specific info but makes variables shorter because I named them very long
+            category_index = category_selections_wem.index(selected.get())
+            dict_text = total_wem_data[category_selections_wem[category_index]]
+            get_info = dict_text[index]
+
+            #get list of keys
+            keys_in_info = list(get_info.keys())
+            text_display = ""
+
+            #Creates text to be displayed
+            for keys in keys_in_info:
+                text_key = str(keys)
+                text_value = str(get_info[keys])
+                text_display = text_display + text_key + ": \n" + text_value + "\n" + "\n"
+
+            #updates text box
+            file_information["state"] = "normal"
+            file_information.delete(0.0, "end")
+            file_information.insert(0.0, f"{text_display}")
+            file_information["state"] = "disabled"
+
+        except:
+            pass
+
+    file_list_box.bind('<<ListboxSelect>>', onselect)
 
 
 
+    # TODO =====> File Information BNK <===== ===== #
+    def onselect_bnk(evt):
+        # Note here that Tkinter passes an event object to onselect()
+        w = evt.widget
+        try:
+            #Gets index of current selection in listbox
+            index = int(w.curselection()[0])
+
+            #Collects specific info but makes variables shorter because I named them very long
+            category_index = category_selections_bnk.index(selected_bnk.get())
+            dict_text = total_bnk_data[category_selections_bnk[category_index]]
+            get_info = dict_text[index]
+
+            #get list of keys
+            keys_in_info = list(get_info.keys())
+            text_display = ""
+
+            #Creates text to be displayed
+            for keys in keys_in_info:
+                text_key = str(keys)
+                text_value = str(get_info[keys])
+                text_display = text_display + text_key + ": " + text_value + "\n" + "\n"
+
+            #updates text box
+            file_information["state"] = "normal"
+            file_information.delete(0.0, "end")
+            file_information.insert(0.0, f"{text_display}")
+            file_information["state"] = "disabled"
+
+        except:
+            pass
+
+    file_list_box_bnk.bind('<<ListboxSelect>>', onselect_bnk)
+
+    file_information = tk.Text(right_frame, height=20, state="disabled")
 
     # TODO =====> Packing All Items <===== ===== #
     #pack locations
-
-
     category_box.pack(side="top", anchor="nw")
     category_box_bnk.pack(side="top", anchor="nw")
 
     #scrollbar.pack(side="right")
     file_list_box.pack(anchor="nw")
+    file_list_box_bnk.pack(anchor="nw")
 
     notebook_parent.pack(expand=1, fill="both")
 
+    file_information.pack(side="top")
 
     #Main window loop
     main_window.mainloop()
