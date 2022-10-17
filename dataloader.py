@@ -156,9 +156,9 @@ def doc_louis_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,
 
     wem_dictionary = {}
     # creates list of all opponents
-    category_list = ["Glass Joe", "Von Kaiser", "Disco Kid", "King Hippo", "Piston Honda", "Bear Hugger", "Great Tiger",
-                    "Don Flamenco", "Aran Ryan", "Soda Popinski", "Bald Bull", "Sandman", "Donkey Kong", "Win", "Loss", "Cornerman", "Other"]
-
+    category_list = ["Glass Joe", "Von Kaiser", "Disco Kid", "King Hippo", "Piston Hondo", "Bear Hugger", "Great Tiger",
+                    "Don Flamenco", "Aran Ryan", "Soda Popinski", "Bald Bull", "Super Macho Man", "Sandman", "Donkey Kong", "Win", "Loss", "Cornerman", "Other"]
+    checker_list = []
     # Creates their dictionary keys
     for fighters in category_list:
         wem_dictionary[fighters] = []
@@ -168,16 +168,19 @@ def doc_louis_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,
         list_of_keys = list(elements.keys())
         file_name = elements[list_of_keys[1]].lower()
 
+
         for fighters in category_list:
             name = fighters.replace(" ", "")
 
             if (name.lower() in file_name):
                 wem_dictionary[fighters].append(elements)
+                checker_list.append(elements)
                 break
             else:
-                wem_dictionary["Other"].append(elements)
-                break
+                pass
 
+        if elements not in checker_list:
+            wem_dictionary["Other"].append(elements)
 
     return wem_dictionary
 
@@ -193,6 +196,7 @@ def wem_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,str]]]
     wem_dictionary = {}
 
     category_list = ["Crowd", "SFX", "Cornerman", "Other"]
+    check_list = []
 
     #create template of all category names
     for categories in category_list:
@@ -217,12 +221,14 @@ def wem_notes(total_data: List[Dict[str,str]]) -> Dict[str, List[Dict[str,str]]]
             if (name.lower() in file_name):
                 # if the category name is in the file name, put in dictionary with category
                 wem_dictionary[categories].append(elements)
+                check_list.append(elements)
                 break
 
             else:
-                #else place in other
-                wem_dictionary["Other"].append(elements)
-                break
+                pass
+
+        if elements not in check_list:
+            wem_dictionary["Other"].append(elements)
 
     return wem_dictionary
 
@@ -237,6 +243,7 @@ def bnk_notes(total_bnk):
     bnk_dictionary = {}
 
     category_list = ["SFX", "Reactions", "Punches", "Knockdown", "Other"]
+    check_list = []
 
     for categories in category_list:
         bnk_dictionary[categories] = []
@@ -261,25 +268,29 @@ def bnk_notes(total_bnk):
                 if (name.lower() in file_name):
                     # if the category name is in the file name, put in dictionary with category
                     bnk_dictionary[categories].append(elements)
+                    check_list.append(elements)
                     break
 
                 elif ("react" in file_name):
                     bnk_dictionary["Reactions"].append(elements)
+                    check_list.append(elements)
                     break
 
                 elif ("right" in file_name):
                     bnk_dictionary["Punches"].append(elements)
+                    check_list.append(elements)
                     break
 
                 elif ("left" in file_name):
                     bnk_dictionary["Punches"].append(elements)
+                    check_list.append(elements)
                     break
 
                 else:
-                    #else place in other
-                    bnk_dictionary["Other"].append(elements)
-                    break
+                    pass
 
+            if elements not in check_list:
+                bnk_dictionary["Other"].append(elements)
 
     return bnk_dictionary
 

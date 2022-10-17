@@ -50,8 +50,21 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     right_frame.propagate(False)
     right_frame.pack(side="right", expand=True, padx=20, pady=10)
 
+
+    # TODO =====> File Information and Conversion Buttons <===== ===== #
     file_information = tk.Label(right_frame, text="This is your file information")
     file_information.pack(side="top")
+
+
+
+    play_foobar = tk.Button(right_frame, text="Play file in Foobar2000/VGMStream", height=3, width=35)
+    open_in_hex = tk.Button(right_frame, text="Open in a Hex Editor", height=3, width=35)
+    replace_dsp = tk.Button(right_frame, text="Replace DSP", height=3, width=35)
+
+    play_foobar.pack(side="bottom")
+    open_in_hex.pack(side="bottom")
+    replace_dsp.pack(side="bottom")
+
 
 
     # TODO =====> Menu <===== ===== #
@@ -98,9 +111,20 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     category_box = ttk.Combobox(tab1, values=category_selections_wem, width=20)
     category_box.set(category_selections_wem[0])
 
+
+
+
     # TODO =====> BNK Combobox <===== ===== #
     category_box_bnk = ttk.Combobox(tab2, values=category_selections_bnk, width=20)
     category_box_bnk.set(category_selections_bnk[0])
+
+    # TODO =====> File Information in Frames WEM <===== ===== #
+
+    file_list_box = tk.Listbox(tab1, height=30, width = 75)
+    for files in total_wem_data[category_selections_wem[0]]:
+            file_list_box.insert("end", files["Name"])
+
+
 
 
     # TODO =====> Scrollbar <===== ===== #
@@ -117,8 +141,11 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     category_box.pack(side="top", anchor="nw")
     category_box_bnk.pack(side="top", anchor="nw")
 
+    #scrollbar.pack(side="right")
+    file_list_box.pack(anchor="nw")
+
     notebook_parent.pack(expand=1, fill="both")
-    scrollbar.pack(anchor="e")
+
 
     #Main window loop
     main_window.mainloop()

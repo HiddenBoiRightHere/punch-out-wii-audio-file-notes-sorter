@@ -4,7 +4,7 @@ from tkinter_window import *
 #flip = input("Please put a number 0-1 for different files. 0 is Glass Joe, 1 is Doc Louis: ")
 #flip = int(flip)
 
-flip = 1
+flip = 0
 
 if flip == 0:
     total_data = wem_opener("example_data/SuperMachoMan.txt")
