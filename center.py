@@ -100,7 +100,6 @@ def opening_processing():
 with open("program_directories_settings.txt", "r") as settings_file:
     settings_info = settings_file.readlines()
 if settings_info[3] == "First Run = True":
-    print("First time")
     settings_info[3] = "First Run = False"
     with open("program_directories_settings.txt", "w") as setter:
         setter.writelines(settings_info)

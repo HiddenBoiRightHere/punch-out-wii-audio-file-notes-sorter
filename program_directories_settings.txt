@@ -1,4 +1,4 @@
-Foobar2000 Directory =
+Foobar2000 Directory = 
 Hex Editor Directory =
 Items Directory =
 First Run = True

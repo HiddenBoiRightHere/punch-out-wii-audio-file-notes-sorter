@@ -57,7 +57,6 @@ def wem_opener(path: str) -> List[Dict[str, str]]:
             return final_list
 
         except:
-            print("This file is missing the information required. Not all information is perfect in the notes, so try another one!")
             return None
 
 
@@ -116,7 +115,6 @@ def bnk_opener(path: str) -> List[Dict[str,str]]:
                 final_list.append(dict_template)
             return final_list
         except:
-            print("There is no BNK file information here. That's okay! It's not required.")
             return None
 
 
