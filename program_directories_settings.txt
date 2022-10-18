@@ -1,0 +1,4 @@
+Foobar2000 Directory = C:/Program Files (x86)/foobar2000/foobar2000.exe
+Hex Editor Directory = C:/Program Files/HxD/HxD.exe
+Items Directory = D:/PO-Modding/Modded Versions/Audio for Video/Don_Flamenco_2.txt
+First Run = False

@@ -1,4 +1,6 @@
 from typing import List, Tuple, Dict
+import tkinter as tk
+
 
 def wem_opener(path: str) -> List[Dict[str, str]]:
     """
@@ -132,7 +134,15 @@ def retrieve_categories(total_data: List[Dict[str,str]], total_bnk: List[Dict[st
 
     #if there is no data, exit the program
     if (total_data == None and total_bnk == None):
-        exit("You don't have any wem or bnk data in here!")
+        failure = tk.Tk()
+        def fail_func():
+            failure.destroy()
+        fail_desc = tk.Label(failure, text="There's no wem or bnk data in here! Please pick a different notes file.")
+        continue_button = tk.Button(failure, text="Close", command=fail_func)
+        fail_desc.pack()
+        continue_button.pack()
+        wem_dictionary = None
+        bnk_dictionary = None
 
     elif(total_data != None and total_bnk == None):
         wem_dictionary = wem_notes(total_data)
@@ -293,4 +303,17 @@ def bnk_notes(total_bnk):
                 bnk_dictionary["Other"].append(elements)
 
     return bnk_dictionary
+
+def program_directories(path: str, program_int: int):
+    with open("program_directories_settings.txt", "r") as settings_file:
+        settings_info = settings_file.readlines()
+    with open("program_directories_settings.txt", "w") as settings_file_w:
+        if (program_int == 0):
+            settings_info[0] = "Foobar2000 Directory = " + path + "\n"
+        elif (program_int == 1):
+            settings_info[1] = "Hex Editor Directory = " + path + "\n"
+        elif (program_int == 2):
+            settings_info[2] = "Items Directory = " + path + "\n"
+
+        settings_file_w.writelines(settings_info)
 

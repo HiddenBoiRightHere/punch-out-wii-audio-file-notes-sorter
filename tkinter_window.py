@@ -1,20 +1,51 @@
 from typing import Tuple, List, Dict
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, filedialog
+from dataloader import *
+import os
+import subprocess
 
 def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     """
-    makes window of alllll data
-    :param total_data_tuple:
-    :return: window
+    Takes all information and organizes it into a window GUI
+    :param total_data_tuple: Contains all the sorted data for both BNK and WEM files.
+    :return: Window/None
     """
+
+    def getFolderPathFoobar():
+        file = filedialog.askopenfilename()
+        program_directories(file, 0)
+
+    def getFolderPathHex():
+        file = filedialog.askopenfilename()
+        program_directories(file, 1)
+
+    def getFolderPathText():
+        file = filedialog.askopenfilename(filetypes = (("Text files", "*.txt"),
+        ('All files', '*.*')))
+        program_directories(file, 2)
+        with open("program_directories_settings.txt", "r") as settings:
+            all_settings = settings.readlines()
+            path_extra = all_settings[2]
+            path_list = path_extra.split("=")
+            path_raw = path_list[1]
+            path = path_raw.strip()
+        total_data = wem_opener(path)
+        total_bnk = bnk_opener(path)
+        sorted_data = retrieve_categories(total_data, total_bnk)
+        main_window.destroy()
+        window_opener(sorted_data)
+
 
     #Separates wem and bnk data from tuple
     total_wem_data = total_data_tuple[0]
     total_bnk_data = total_data_tuple[1]
 
     #Gets categories for each form of data if they exist
-    if (total_wem_data == None):
+    if (total_wem_data == None and total_bnk_data == None):
+        category_selections_wem = ["Empty."]
+        category_selections_bnk = ["Empty."]
+    elif (total_wem_data == None):
         category_selections_bnk = list(total_bnk_data.keys())
         category_selections_wem = ["Empty."]
 
@@ -39,8 +70,11 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     main_window.configure(bg="dark gray")
 
     # TODO =====> Creates Top Label <===== ===== #
-    audio_sorter_name = tk.Label(main_window, text="HiddenBoi's Audio Sorter and Converter for Punch-Out!! Wii", font=("Arial", 15), bg="dark grey")
+    audio_sorter_name = tk.Label(main_window, text="HiddenBoi's Audio Sorter and Converter for Punch-Out!! Wii", font=("Arial", 20), bg="dark grey")
     audio_sorter_name.pack(side="top", pady=10)
+
+    informational_label = tk.Label(main_window, text="Please ensure that your .wav and .bnk files are in the same directory as the notes files you are looking through, or else your files will not play or open properly.", wraplength=800, font=["Arial", 13], bg="dark grey")
+    informational_label.pack(side="top", pady=10)
 
     # TODO =====> Frames <===== ===== #
     left_frame = tk.Frame(main_window, height=500, width=475)
@@ -53,16 +87,96 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
 
+    def direct_set():
+        """
+        Opens file in foobar2000.
+        :return: None
+        """
+        with open("program_directories_settings.txt", "r") as direct:
+            lines = direct.readlines()
+            chosen = lines[0]
+            chosen_list = chosen.split("=")
+            directory_foo = chosen_list[1].strip()
+            dir_cont = lines[2]
+            dir_cont_list = dir_cont.split("=")
+            dir_cont_list_further = dir_cont_list[1].strip()
+            dir_cont_last_split = dir_cont_list_further.split("/")
+            dir_cont_last_split.pop(-1)
+            directory_content =  "/".join(dir_cont_last_split)
+
+        if (notebook_parent.index("current") == 0):
+            fileName = file_list_box.get("active")
+            selected_index = category_selections_wem.index(selected.get())
+            for files in total_wem_data[category_selections_wem[selected_index]]:
+                if fileName in files["Name"]:
+                    ext = files["Generated audio file"]
+                    ext_save = ext.split(".")
+                    ext_save[1] = "wem"
+                    extension = ".".join(ext_save)
+                    final_dir = directory_content + "/" + extension
+                else:
+                    pass
+            subprocess.Popen([directory_foo, final_dir])
+
+        else:
+            renamer = dir_cont_list_further.split(".")
+            renamer[1] = "bnk"
+            final_dir = ".".join(renamer)
+            subprocess.Popen([directory_foo, final_dir])
+
+
+    def hex_opener():
+        """
+        Opens file in HxD or other hex editor
+        :return: None
+        """
+        with open("program_directories_settings.txt", "r") as direct:
+            lines = direct.readlines()
+            chosen = lines[1]
+            chosen_list = chosen.split("=")
+            directory_hex = chosen_list[1].strip()
+            dir_cont = lines[2]
+            dir_cont_list = dir_cont.split("=")
+            dir_cont_list_further = dir_cont_list[1].strip()
+            dir_cont_last_split = dir_cont_list_further.split("/")
+            dir_cont_last_split.pop(-1)
+            directory_content =  "/".join(dir_cont_last_split)
+
+        if (notebook_parent.index("current") == 0):
+            fileName = file_list_box.get("active")
+            selected_index = category_selections_wem.index(selected.get())
+            for files in total_wem_data[category_selections_wem[selected_index]]:
+                if fileName in files["Name"]:
+                    ext = files["Generated audio file"]
+                    ext_save = ext.split(".")
+                    ext_save[1] = "wem"
+                    extension = ".".join(ext_save)
+                    final_dir = directory_content + "/" + extension
+                else:
+                    pass
+            subprocess.Popen([directory_hex, final_dir])
+
+        else:
+            renamer = dir_cont_list_further.split(".")
+            renamer[1] = "bnk"
+            final_dir = ".".join(renamer)
+            subprocess.Popen([directory_hex, final_dir])
+
+
+    def replace_Dsp():
+        print("replace the dsp")
 
 
 
-    play_foobar = tk.Button(right_frame, text="Play file in Foobar2000/VGMStream", height=3, width=35)
-    open_in_hex = tk.Button(right_frame, text="Open in a Hex Editor", height=3, width=35)
-    replace_dsp = tk.Button(right_frame, text="Replace DSP", height=3, width=35)
+    play_foobar = tk.Button(right_frame, text="Play file in Foobar2000/VGMStream", height=3, width=35, command=direct_set)
+    open_in_hex = tk.Button(right_frame, text="Open in a Hex Editor", height=3, width=35, command=hex_opener)
+    replace_dsp = tk.Button(right_frame, text="Replace DSP", height=3, width=35, command=replace_Dsp)
 
-    play_foobar.pack(side="bottom")
     open_in_hex.pack(side="bottom")
     replace_dsp.pack(side="bottom")
+    play_foobar.pack(side="bottom")
+
+
 
 
 
@@ -82,10 +196,9 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     file_menu = tk.Menu(menubar, tearoff = False)
 
     # add a menu item to the menu
-    file_menu.add_command(label = "Change Foobar2000 Directory")
-    file_menu.add_command(label = "Change VGAudio Directory")
-    file_menu.add_command(label = "Change DSP Converter Directory")
-    file_menu.add_command(label = "Change Hex Editor Directory")
+    file_menu.add_command(label = "Change Foobar2000 Directory", command=getFolderPathFoobar)
+    file_menu.add_command(label = "Change Hex Editor Directory", command=getFolderPathHex)
+    file_menu.add_command(label = "Change Text File", command=getFolderPathText)
 
     # add the File menu to the menubar
     menubar.add_cascade(label = "Options", menu = file_menu)
@@ -113,6 +226,13 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     # TODO =====> File Information in Frames WEM <===== ===== #
 
     def on_field_change(index, value, op):
+        """
+        Updates wem listbox depending on selected category.
+        :param index:
+        :param value:
+        :param op:
+        :return:
+        """
         file_list_box.config(state="normal")
         file_list_box.delete(0, "end")
         selected_index = category_selections_wem.index(selected.get())
@@ -122,6 +242,13 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
             file_list_box.insert("end", "There are no files in this category! Please select another one.")
             file_list_box.config(state="disabled")
     def on_field_change_bnk(index, value, op):
+        """
+        Updates bnk listbox depending on selected category.
+        :param index:
+        :param value:
+        :param op:
+        :return:
+        """
         file_list_box_bnk.config(state="normal")
         file_list_box_bnk.delete(0, "end")
         try:
@@ -155,6 +282,11 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
     # TODO =====> File Information WEM <===== ===== #
     def onselect(evt):
+        """
+        Changes information on right side showing info about selected text file.
+        :param evt: Change in selection
+        :return: None
+        """
         # Note here that Tkinter passes an event object to onselect()
         w = evt.widget
         try:
