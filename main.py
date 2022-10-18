@@ -3,8 +3,6 @@ import tkinter
 from dataloader import *
 from tkinter_window import *
 
-#flip = input("Please put a number 0-1 for different files. 0 is Glass Joe, 1 is Doc Louis: ")
-#flip = int(flip)
 
 
 def getFolderPathFoobar():

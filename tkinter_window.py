@@ -4,6 +4,7 @@ from tkinter import ttk, filedialog
 from dataloader import *
 import os
 import subprocess
+from bnkorganizer import *
 
 def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     """
@@ -62,21 +63,22 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
 
-    # TODO =====> Creates Window <===== ===== #
+    # =====> Creates Window <===== ===== #
     main_window = tk.Tk()
+    main_window.title("HiddenBoi's Audio Sorter and Converter")
     main_window.geometry("800x600")
     main_window.minsize(800,600)
     main_window.maxsize(800, 600)
     main_window.configure(bg="dark gray")
 
-    # TODO =====> Creates Top Label <===== ===== #
+    # =====> Creates Top Label <===== ===== #
     audio_sorter_name = tk.Label(main_window, text="HiddenBoi's Audio Sorter and Converter for Punch-Out!! Wii", font=("Arial", 20), bg="dark grey")
     audio_sorter_name.pack(side="top", pady=10)
 
-    informational_label = tk.Label(main_window, text="Please ensure that your .wav and .bnk files are in the same directory as the notes files you are looking through, or else your files will not play or open properly.", wraplength=800, font=["Arial", 13], bg="dark grey")
+    informational_label = tk.Label(main_window, text="Please ensure that your .wem (renamed from .wav) and .bnk files are in the same directory as the notes files you are looking through, or else your files will not play or open properly.", wraplength=800, font=["Arial", 13], bg="dark grey")
     informational_label.pack(side="top", pady=10)
 
-    # TODO =====> Frames <===== ===== #
+    # =====> Frames <===== ===== #
     left_frame = tk.Frame(main_window, height=500, width=475)
     left_frame.propagate(False)
     left_frame.pack(side="left", expand=True, padx=20, pady=10)
@@ -164,8 +166,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
     def replace_Dsp():
-        print("replace the dsp")
-
+        starter()
 
 
     play_foobar = tk.Button(right_frame, text="Play file in Foobar2000/VGMStream", height=3, width=35, command=direct_set)
@@ -180,7 +181,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
 
-    # TODO =====> Menu <===== ===== #
+    # =====> Menu <===== ===== #
     #Menu containing opbtions for user to pick from if they want to change their program directories
     variable = "Options"
     #Create menubar
@@ -195,10 +196,16 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     # create a menu
     file_menu = tk.Menu(menubar, tearoff = False)
 
+    def showAbout():
+        about = tk.Tk()
+        info_self = tk.Label(about, text="Created by HiddenBoiRightHere in the span of a few days... It's not very pretty, but should get the job done on any Windows computer! By the way, GUIs are hard to make... Enjoy!", wraplength=600, font=["Arial", 15])
+        info_self.pack()
+        about.mainloop()
     # add a menu item to the menu
     file_menu.add_command(label = "Change Foobar2000 Directory", command=getFolderPathFoobar)
     file_menu.add_command(label = "Change Hex Editor Directory", command=getFolderPathHex)
     file_menu.add_command(label = "Change Text File", command=getFolderPathText)
+    file_menu.add_command(label = "About", command=showAbout)
 
     # add the File menu to the menubar
     menubar.add_cascade(label = "Options", menu = file_menu)
@@ -206,7 +213,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
 
-    # TODO =====> Tabs/Notebook <===== ===== #
+    # =====> Tabs/Notebook <===== ===== #
 
     #Tabs for bnk vs wem (notebook)
     notebook_parent = ttk.Notebook(left_frame)
@@ -219,11 +226,11 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     notebook_parent.add(tab2, text="BNK Files")
 
 
-    # TODO =====> Listboxes to select categories <===== ===== #
+    # =====> Listboxes to select categories <===== ===== #
     file_list_box = tk.Listbox(tab1, height=30, width=75, selectmode="single")
     file_list_box_bnk = tk.Listbox(tab2, height=30, width=75, selectmode="single")
 
-    # TODO =====> File Information in Frames WEM <===== ===== #
+    # =====> File Information in Frames WEM <===== ===== #
 
     def on_field_change(index, value, op):
         """
@@ -280,7 +287,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
     category_box_bnk = ttk.Combobox(tab2, values=category_selections_bnk, width=20, textvariable=selected_bnk)
     category_box_bnk.set(category_selections_bnk[0])
 
-    # TODO =====> File Information WEM <===== ===== #
+    # =====> File Information WEM <===== ===== #
     def onselect(evt):
         """
         Changes information on right side showing info about selected text file.
@@ -321,7 +328,7 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
 
 
-    # TODO =====> File Information BNK <===== ===== #
+    # =====> File Information BNK <===== ===== #
     def onselect_bnk(evt):
         # Note here that Tkinter passes an event object to onselect()
         w = evt.widget
@@ -357,12 +364,23 @@ def window_opener(total_data_tuple: Tuple[Dict[str,List[Dict[str,str]]]]):
 
     file_information = tk.Text(right_frame, height=20, state="disabled")
 
-    # TODO =====> Packing All Items <===== ===== #
+    # =====> Scrollbars <===== ===== #
+    scrollbar = tk.Scrollbar(tab1)
+    file_list_box.config(yscrollcommand=scrollbar.set)
+    scrollbar.config(command=file_list_box.yview)
+
+    scrollbar_bnk = tk.Scrollbar(tab2)
+    file_list_box_bnk.config(yscrollcommand=scrollbar_bnk.set)
+    scrollbar_bnk.config(command=file_list_box_bnk.yview)
+
+    # =====> Packing All Items <===== ===== #
     #pack locations
     category_box.pack(side="top", anchor="nw")
     category_box_bnk.pack(side="top", anchor="nw")
 
-    #scrollbar.pack(side="right")
+    scrollbar.place(x=455, y=0, height=425)
+    scrollbar_bnk.place(x=455, y=0, height=425)
+
     file_list_box.pack(anchor="nw")
     file_list_box_bnk.pack(anchor="nw")
 
